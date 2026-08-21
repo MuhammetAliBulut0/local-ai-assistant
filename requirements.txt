@@ -1,0 +1,24 @@
+# Yerel LLM istemcisi ve agent orkestrasyonu (Microsoft Agent Framework)
+agent-framework-core>=1.14.0
+agent-framework-ollama>=1.0.0b260813
+
+# NOT: agent-framework-ollama, `ollama` paketini <0.5.4 ile sınırlıyor.
+# langchain-ollama'nın yeni sürümleri (1.x) ise >=0.6.1 istiyor ve bu ikisi
+# ASLA aynı ortamda bir arada kurulamıyor (pip ResolutionImpossible verir).
+# Bu yüzden `ollama` sürümünü ve langchain-ollama'yı kasıtlı olarak eski,
+# birbiriyle uyumlu sürümlere sabitliyoruz.
+ollama==0.5.3
+langchain-ollama==0.3.10
+
+# RAG ardışık düzeni (belge yükleme, parçalama, embedding, vektör veritabanı)
+langchain-core>=1.5.6
+langchain-text-splitters>=1.1.2
+langchain-chroma>=1.1.0
+chromadb>=1.5.9
+pypdf>=5.0.0
+
+# Kullanıcı arayüzü
+streamlit>=1.61.1
+
+# Yardımcı
+python-dotenv>=1.2.2

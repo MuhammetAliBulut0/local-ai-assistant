@@ -1,0 +1,19 @@
+# Ortam
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Veri (kullanıcıya özel, repoya gitmemeli)
+data/uploads/*
+!data/uploads/.gitkeep
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
