@@ -74,6 +74,14 @@ Tarayıcıda açılan arayüzden PDF/TXT/MD dosyalarınızı yükleyip "Belgeler
 İşle" butonuna basın, ardından sohbet kutusundan belgelerinizle ilgili
 sorular sorun.
 
+### Bir sonraki seferler: sanal ortamı tekrar aktif etmeden çalıştırma (Windows)
+
+Kurulumu bir kez tamamladıktan sonra, her yeni terminalde sanal ortamı
+(`.venv`) tekrar aktif etmen gerekir — aksi halde `ModuleNotFoundError` gibi
+hatalar alırsın. Bunu elle yapmak yerine proje klasöründeki **`baslat.bat`**
+dosyasına çift tıklaman yeterli; bu dosya sanal ortamı otomatik aktif edip
+uygulamayı başlatır.
+
 ### Alternatif: Arayüzsüz (CLI) indeksleme
 
 ```bash
